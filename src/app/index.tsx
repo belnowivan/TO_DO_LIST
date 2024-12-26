@@ -3,7 +3,7 @@ import { TaskListPage } from '@pages/index';
 
 export const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/TO_DO_LIST'>
             <Routes>
                 <Route path='/' element={<TaskListPage />} />
             </Routes>

@@ -40,6 +40,7 @@ export const webpackCommonConfig: WebpackCommonConfigInterface = {
     output: {
         filename: '[name]-[hash:6].bundle.js',
         path: path.resolve(__dirname, 'build'),
+        publicPath: '/TO_DO_LIST/',
         clean: true,
     },
 };
