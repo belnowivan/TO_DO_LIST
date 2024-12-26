@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://belnowivan.github.io/TO_DO_LIST",
   "scripts": {
+    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
     "start": "webpack serve --config webpack.development.config.ts",
+    "build": "webpack --config webpack.production.config.ts",
     "lint": "npm run lint:ts && npm run lint:eslint",
     "lint:fix": "npm run lint:ts && npm run lint:eslint:fix",
     "lint:ts": "tsc --noEmit",
@@ -38,6 +44,7 @@
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
     "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "gh-pages": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "2.5.1",
     "swc-loader": "^0.2.6",
