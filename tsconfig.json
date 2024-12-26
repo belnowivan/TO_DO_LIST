@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ESNext",
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noImplicitAny": true,
+      "noEmit": true,
+      "baseUrl": "./src",
+      "paths": {
+        "@pages/*": ["./pages/*"],
+        "@app/*": ["./app/*"],
+        "@components/*": ["./components/*"],
+        "@commonTypes/*": ["./commonTypes/*"]
+      }
+    },
+    "ts-node": {
+        "compilerOptions": {
+          "module": "CommonJS"
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
